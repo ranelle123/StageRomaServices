@@ -26,17 +26,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-// Confirmation à l'envoi du formulaire de contact
-document.addEventListener('DOMContentLoaded', function () {
-    const form = document.querySelector('form');
-    if (form) {
-        form.addEventListener('submit', function (e) {
-            e.preventDefault();
-            alert(t('contact.thanks') || 'Merci pour votre message ! Nous vous répondrons rapidement.');
-            form.reset();
-        });
-    }
-});
 // Affiche un commentaire quand on clique sur une image avec la classe 'img-comment'
 document.addEventListener('DOMContentLoaded', function () {
     const images = document.querySelectorAll('.img-comment');
